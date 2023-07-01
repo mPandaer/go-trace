@@ -1,0 +1,24 @@
+goroutine[00001] enter: main.g1
+goroutine[00001] enter: main.g2
+goroutine[00001] enter: main.g3
+goroutine[00001] exit: main.g3
+goroutine[00001] exit: main.g2
+goroutine[00001] exit: main.g1
+goroutine[00018] enter: main.f1
+goroutine[00018] enter: main.f2
+goroutine[00018] enter: main.f3
+goroutine[00018] exit: main.f3
+goroutine[00018] exit: main.f2
+goroutine[00018] exit: main.f1
+G[00001]: ->main.g1
+G[00001]:       ->main.g2
+G[00001]:             ->main.g3
+G[00001]:             <-main.g3
+G[00001]:       <-main.g2
+G[00006]: ->main.f1
+G[00001]: <-main.g1
+G[00006]:       ->main.f2
+G[00006]:             ->main.f3
+G[00006]:             <-main.f3
+G[00006]:       <-main.f2
+G[00006]: <-main.f1
